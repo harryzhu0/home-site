@@ -1,0 +1,82 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colour palette */
+:root {
+  --bg: #070720;
+  --fg: #e6e6e9;
+  --muted: #9a9ab0;
+
+  /* BLUE ACCENTS */
+  --accent: #4c8bf5;        /* primary blue */
+  --accent-soft: rgba(76, 139, 245, 0.12);
+
+  --font-mono: "FiraCode Nerd Font Mono", "Fira Code", monospace;
+}
+
+/* Global */
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Layout */
+main {
+  max-width: 720px;
+  margin: 10vh auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.15s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* Nav */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+/* Optional: subtle card style */
+.card {
+  background: var(--accent-soft);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
