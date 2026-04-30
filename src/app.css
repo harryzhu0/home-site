@@ -101,7 +101,7 @@ a::after {
 
 a:hover::after {
   width: 100%;
-}
+}z
 
 a:hover {
   text-shadow: 0 0 6px rgba(76, 139, 245, 0.6);
@@ -169,4 +169,9 @@ main {
   h1 {
     line-height: 1.2;
   }
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
